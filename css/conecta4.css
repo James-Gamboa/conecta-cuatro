@@ -1,0 +1,109 @@
+body{
+    background-color: rgb(180, 180, 180);
+
+}
+
+#tabla{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(53, 47, 47, 0.349);
+    border: 2px cornflowerblue;
+    padding: 7px;
+   
+}
+td{
+    background-color: #638CFF;
+    border: 0px !important;
+    padding: 5px !important;
+
+}
+tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.slot{
+    padding: 2px;
+    border-radius: 70px;
+    background: #fff;
+    border: 2px solid #073976;
+    width: 35px;
+    height: 55px;
+}
+.cuerpo{
+    padding: 25px;
+    display: flex;
+    justify-content: center; 
+    /* centrar */
+
+}
+.player1{
+    text-align: center;
+    width: 200px;
+    height: 70px;
+    background-color: rgb(229, 255, 0);
+    color: black; 
+
+}
+
+.player2{
+    text-align: center;
+    width: 200px;
+    height: 70px;
+    background-color: rgb(4, 0, 255);
+    color: black;
+
+  
+}
+.padre{
+    display: flex;
+    justify-content: center;
+}
+
+.boton {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    width: 175px;
+    height: 70px;
+    background-color: #fffb00;
+}
+
+.boton:hover {
+    background-color: #0639c4; /* Green */
+    color: white;
+}
+.boton2 {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    width: 175px;
+    height: 70px;
+    background-color: #fffb00;
+}
+
+.boton2:hover {
+    background-color: #0639c4;
+     /* Green */
+    color: white;
+}
+
+a{   
+     width: 175px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    color: rgb(26, 25, 25);
+    text-decoration: none;
+}
+.botoncaja{
+    display: flex;
+    justify-content: center;
+}
+.botoncaja2{
+    display: flex;
+    justify-content: center;
+}
+.dedo{
+width: 80px;
+height: 30px;
+
+}
