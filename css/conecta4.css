@@ -9,7 +9,6 @@ body{
     background-color: rgba(53, 47, 47, 0.349);
     border: 2px cornflowerblue;
     padding: 7px;
-   
 }
 td{
     background-color: #638CFF;
@@ -53,7 +52,6 @@ tr{
     background-color: rgb(4, 0, 255);
     color: black;
 
-  
 }
 .padre{
     display: flex;
@@ -87,7 +85,7 @@ tr{
 }
 
 a{   
-     width: 175px;
+    width: 175px;
     height: 70px;
     display: flex;
     justify-content: center;

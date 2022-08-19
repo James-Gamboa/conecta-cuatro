@@ -66,23 +66,19 @@ document.getElementById("8").addEventListener("click", () => {
 
 /*
 function ganador(tablero, jugador, fila, columna) {
-  // Aqui deben incluir el codigo para seleccionar cuando un usuario gana todas las posibles combinaciones.
-
-    fila par, columna impar y se alterna (diagonales)
+  Aqui deben incluir el codigo para seleccionar cuando un usuario gana todas las posibles combinaciones.
+  fila par, columna impar y se alterna (diagonales)
   misma fila, iniciando en pares e impares (horizontales)
-  // diferente fila, misma columna (verticales)
-
+  diferente fila, misma columna (verticales)
   for (let i = 0; i < matriz.length; i++) {
     for (let j = 0; j < matriz.length; j++) {
       if (matriz[7][j] % 2 == 0) {
       }
     }
   }
-
   return false;
 }
 */
-
 function ganador() {
   for (var i = 0; i < matriz.length - 3; i++) {
     for (var j = 0; j < matriz[i].length; j++) {
@@ -93,7 +89,6 @@ function ganador() {
         matriz[i][j] === 1
       ) {
         return {
-          winner: "red",
           pos_i: [i + 3, i + 2, i + 1, i],
           pos_j: [j, j, j, j],
         };
@@ -105,7 +100,6 @@ function ganador() {
         matriz[i][j] === 2
       ) {
         return {
-          winner: "blue",
           pos_i: [i + 3, i + 2, i + 1, i],
           pos_j: [j, j, j, j],
         };
@@ -121,7 +115,6 @@ function ganador() {
         matriz[i][j] === 1
       ) {
         return {
-          winner: "red",
           pos_i: [i, i, i, i],
           pos_j: [j + 3, j + 2, j + 1, j],
         };
@@ -133,7 +126,6 @@ function ganador() {
         matriz[i][j] === 2
       ) {
         return {
-          winner: "blue",
           pos_i: [i, i, i, i],
           pos_j: [j + 3, j + 2, j + 1, j],
         };
@@ -149,7 +141,6 @@ function ganador() {
         matriz[i][j] === 1
       ) {
         return {
-          winner: "red",
           pos_i: [i + 3, i + 2, i + 1, i],
           pos_j: [j + 3, j + 2, j + 1, j],
         };
@@ -161,7 +152,6 @@ function ganador() {
         matriz[i][j] === 2
       ) {
         return {
-          winner: "blue",
           pos_i: [i + 3, i + 2, i + 1, i],
           pos_j: [j + 3, j + 2, j + 1, j],
         };
@@ -173,7 +163,6 @@ function ganador() {
         matriz[i + 3][j] === 1
       ) {
         return {
-          winner: "red",
           pos_i: [i, i + 1, i + 2, i + 3],
           pos_j: [j + 3, j + 2, j + 1, j],
         };
@@ -185,18 +174,16 @@ function ganador() {
         matriz[i + 3][j] === 2
       ) {
         return {
-          winner: "blue",
           pos_i: [i, i + 1, i + 2, i + 3],
           pos_j: [j + 3, j + 2, j + 1, j],
         };
       }
     }
   }
-  return "false";
+  return false;
 }
 
 if (matriz.length == 0) empate();
-
 function empate() {
   console.log("Empate");
   alert("Empate");
