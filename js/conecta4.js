@@ -64,22 +64,10 @@ document.getElementById("8").addEventListener("click", () => {
   main(7);
 });
 
-/*
 function ganador(tablero, jugador, fila, columna) {
-  Aqui deben incluir el codigo para seleccionar cuando un usuario gana todas las posibles combinaciones.
-  fila par, columna impar y se alterna (diagonales)
-  misma fila, iniciando en pares e impares (horizontales)
-  diferente fila, misma columna (verticales)
-  for (let i = 0; i < matriz.length; i++) {
-    for (let j = 0; j < matriz.length; j++) {
-      if (matriz[7][j] % 2 == 0) {
-      }
-    }
-  }
-  return false;
-}
-*/
-function ganador(tablero, jugador, fila, columna) {
+  /*
+    Aqui deben incluir el codigo para seleccionar cuando un usuario gana todas las posibles combinaciones.
+  */
   for (var i = 0; i < matriz.length - 3; i++) {
     for (var j = 0; j < matriz[i].length; j++) {
       if (
