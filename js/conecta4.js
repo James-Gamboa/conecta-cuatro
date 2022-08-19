@@ -79,7 +79,7 @@ function ganador(tablero, jugador, fila, columna) {
   return false;
 }
 */
-function ganador() {
+function ganador(tablero, jugador, fila, columna) {
   for (var i = 0; i < matriz.length - 3; i++) {
     for (var j = 0; j < matriz[i].length; j++) {
       if (

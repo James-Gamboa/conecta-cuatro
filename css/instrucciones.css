@@ -5,8 +5,6 @@ body{
 .boton {
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
-  
-   
     background-color: #fffb00;
 }
 
